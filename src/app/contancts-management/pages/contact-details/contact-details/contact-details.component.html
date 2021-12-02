@@ -1,0 +1,48 @@
+<div class="contact-editor">
+
+    <form [formGroup]="contactForm">
+        <fieldset>
+            <div class ="form-layout">
+
+                <mat-label>Name</mat-label>
+                <div class="fields">
+                    <mat-form-field class="form-fields">
+                        <input type="text" class="form-control" [formControlName]="'name'" matInput required>
+                    </mat-form-field>
+
+                </div>
+                <mat-label>Email</mat-label>
+                <div class="fields">
+
+                    <mat-form-field class="form-fields">
+                        <input type="email" class="form-control" matInput [formControlName]="'email'" >
+                    </mat-form-field>
+                </div>
+                <mat-label>Phone</mat-label>
+                <div class="fields">
+                    <mat-form-field class="form-fields">
+                        <input type="number" class="form-control" matInput [formControlName]="'phone'" >
+                    </mat-form-field>
+                </div>
+                <mat-label>Company</mat-label>
+                <div class="fields">
+                    <mat-form-field class="form-fields">
+                        <input type="text" class="form-control" matInput [formControlName]="'company'">
+                    </mat-form-field>
+                </div>
+                <mat-label>Notes</mat-label>
+                <div class="fields">
+                    <mat-form-field class="form-fields">
+                        <textarea type="text" class="form-control" matInput [formControlName]="'notes'">
+                            </textarea>
+                    </mat-form-field>
+                </div>
+                <div class="page-header">
+                    <button mat-flat-button color="primary" (click) = "onUpdate()">Update</button>
+                </div>
+
+            </div>
+        </fieldset>
+
+    </form>
+</div>

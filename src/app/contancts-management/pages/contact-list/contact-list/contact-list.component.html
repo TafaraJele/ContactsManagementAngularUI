@@ -1,0 +1,40 @@
+<section class="contact-list-top">
+    <button routerLink="/contact-editor" color="primary" mat-flat-button>
+        <mat-icon>add</mat-icon>
+        <span>Add Contact</span>
+    </button>
+</section>
+
+<section>
+    <mat-card class="header-card-style">
+
+        <div class="name">Name</div>
+        <div class="phone">Phone</div>
+        <div class="email">Email</div>
+        <div class="actions"></div>
+
+    </mat-card>
+
+    <mat-card *ngFor='let contact of contacts' class="card-style">
+
+        <div class="name"> {{contact.name}}</div>
+        <div class="phone">{{contact.phone}}</div>
+        <div class="email">{{contact.email}}</div>
+        <div class="actions">
+            <a (click)="onDelete(contact)">
+                <mat-icon>delete_outline</mat-icon>
+            </a>
+        </div>
+        <div class="actions">
+            <a (click)="viewContactDetails(contact)">
+                <mat-icon>edit</mat-icon>view
+            </a>
+        </div>
+
+    </mat-card>
+
+    <mat-card *ngIf="contacts.length == 0" class="card-style loading-data">
+        No contacts...
+    </mat-card>
+
+</section>

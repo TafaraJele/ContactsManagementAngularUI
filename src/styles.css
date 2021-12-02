@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin-left: 100px; 
+       margin-right:100px;     
+       font-family: Roboto, "Helvetica Neue", sans-serif; 
+       
+    }
+    .button-styles{
+        background-color: #038cfc;
+    }
+    .notification{
+        background: white !important;  
+        color:#1D4ED8 !important;
+        border-width:thin !important;
+        border-color:#1D4ED8 !important
+    }
+    
+    .success{
+        background: white !important; 
+        color:#065F46 !important;
+        border-width:thin !important;
+        border-color:#065F46 !important
+    }
+    .error{
+        background: white !important; 
+        color:#B91C1C !important;
+        border-width:thin !important;
+        border-color:#B91C1C !important
+    }
+    .error-border{
+        border-width:thin !important;
+        border-color:#B91C1C !important;
+        border-radius: 30% !important
+    }
+    .success-border{
+        border-width:thin !important;
+        border-color:#065F46 !important;
+        border-radius: 30% !important
+    }
+
+

@@ -1,0 +1,44 @@
+
+
+  .card-style{
+     border:1px
+     solid #0088dd;
+     margin-top: 10px; 
+     height: 25px;
+  }
+  .header-card-style{
+    
+    margin-top: 10px;
+    background-color: #003782;
+    height: 25px;
+    color: white;
+ }
+  
+  .name{
+      float: left;   
+      width: 30%;   
+  }
+  .email{
+      float:left;
+      width: 25%;
+  }
+  .phone{
+      float: left;
+      width: 25%;
+  }
+  .actions{
+    float: right;
+    width: 10%;
+  }
+  
+.loading-data{
+    text-align:  center;
+    font-style:italic;
+   }
+
+.contact-list-top{
+margin-top: 20px;
+}
+a{
+    cursor: pointer;
+}
