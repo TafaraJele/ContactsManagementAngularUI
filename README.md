@@ -1,5 +1,8 @@
 # ContactsManagementApp
 
+PLEASE NOTE the endpoint to the API is configure as https://localhost:44317 in the environment file. If the API is running on a different port please change this baseUrl in the 
+angular enviroment file otherwise calls to the API will fail
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
 
 ## Development server
