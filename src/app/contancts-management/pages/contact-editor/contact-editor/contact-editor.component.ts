@@ -41,7 +41,7 @@ export class ContactEditorComponent implements OnInit {
     this.contact.email = this.contactForm.value['email']
     this.contact.name = this.contactForm.value['name']
     this.contact.notes = this.contactForm.value['notes']
-    this.contact.phone = this.contactForm.value['phone']
+    this.contact.phone = '' + this.contactForm.value['phone']
 
     this.service.addContact(this.contact).subscribe(result => {
       debugger
